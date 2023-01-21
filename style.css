@@ -1,6 +1,8 @@
-h1{
-    size: 500px;
-    color: rgb(51, 43, 43);
+.city{
+ font-size: 80px;
+    color :red;
+    left:900px ;
+   
 }
 .time{
     margin: 0;
@@ -14,10 +16,4 @@ h1{
     color:#596e79 ;
     font-size: medium;
 
-}
-.border{
-    max-width: 600px;
-    margin:30px;
-    padding: 20px;
-    border: 2px solid #dadde1;
 }
