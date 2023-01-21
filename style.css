@@ -1,0 +1,23 @@
+h1{
+    size: 500px;
+    color: rgb(51, 43, 43);
+}
+.time{
+    margin: 0;
+}
+.houre{
+    font-size: 25px;
+    color: black;
+
+}
+.date{
+    color:#596e79 ;
+    font-size: medium;
+
+}
+.border{
+    max-width: 600px;
+    margin:30px;
+    padding: 20px;
+    border: 2px solid #dadde1;
+}
