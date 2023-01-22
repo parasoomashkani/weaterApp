@@ -9,15 +9,16 @@
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous"
-  />
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  /> 
+   <link rel="stylesheet" href="style.css" />
+ 
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
-   
     <title>Weather App</title>
 </head>
 <div class="container">
-    <div class="city">Tehran</div>
+    <div class="city"  id="city"></div>
+    
     <ul id="time">
         <li id="houre">
             12:00
@@ -25,17 +26,18 @@
         <li id="date">
             date
         </li>
-        <li id="description">cleer</li>
+        <li id="description"></li>
     </ul>
 <div class="row">
     <div class="col-6">
         <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="cleer" >
-        12 °C|°F
+       <strong id="temperature"></strong>  °C|°F
     </div>
     <div class="col-6">
         <ul>
-          <li>Humidity: <span id="humidity"></span>%</li>
-          <li>Wind: <span id="wind"></span> m/h</li>
+          <li>Humidity : <span id="humidity"></span>%</li>
+          <li>Wind : <span id="wind"></span> m/h</li>
+          <li>Feels like : <span id="feels">  </span>°</li>
         </ul>
       </div>
 </div>
@@ -130,4 +132,5 @@
 </div>
 
 </body>
+<script src="index.js"></script>
 </html>
