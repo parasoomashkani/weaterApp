@@ -22,6 +22,32 @@ function formatDate(timestamp) {
     let day = days[date.getDay()];
     return `${day} ${hours}:${minutes}`;
   }
+  function displayForecast(){
+    let forecast=document.querySelector("#forecast");
+    let forecastHTML="";
+forecastElement.innerHTML=`
+<div class="row">
+<div class="col-2">
+        <div class="weather-forecast-date">
+                Thu
+        </div>
+        <img src="https://ssl.gstatic.com/onebox/weather/48/sunny.png" alt=""
+        width="56"/>
+        <div class="weather-forecast-temperature">
+                <span class="weather-forecaste-temperature-max">
+                        10
+                </span>
+                /
+                <span class="weather-forecast-temperature-min">
+                        12
+                </span>
+        </div>
+</div>
+</div>
+
+`
+
+  }
 
 function displayTemperature(response){
     console.log(response.data);
