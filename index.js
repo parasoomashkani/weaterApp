@@ -68,11 +68,11 @@ function displayTemperature(response){
 
   
     temperatureElement.innerHTML=
-    Math.round(response.data.main.temp);
+    Math.round (response.data.main.temp-273);
     description.innerHTML=response.data.weather[0].description;  
     humidityElement.innerHTML=response.data.main.humidity;
     windElement.innerHTML=Math.round(response.data.wind.speed);
-    feelsLike.innerHTML=Math.round(response.data.main.feels_like);
+    feelsLike.innerHTML=Math.round(response.data.main.feels_like-273);
     dateElement.innerHTML=formatDate(response.data.dt*1000);
     iconElement.setAttribute(
       "src",
