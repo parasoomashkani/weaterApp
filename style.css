@@ -71,3 +71,24 @@ li{
     border: 1px solid #ccc;
     }
     }
+    .cleerfix-temperature strong {
+        color: rgb(33, 33, 33);
+        font-size: 64px;
+        line-height: 1;
+        font-weight: 400;
+      }
+      
+      .cleerfix-temperature .units {
+        position: relative;
+        font-size: 16px;
+        top: -34px;
+      }
+      
+      .cleerfix-temperature .active {
+        color: rgb(33, 33, 33);
+        cursor: default;
+      }
+      
+      .cleerfix-temperature .active:hover {
+        text-decoration: none;
+      }
