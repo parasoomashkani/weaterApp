@@ -1,3 +1,32 @@
+body{
+ margin: 0;
+     font-family:'Rubi',sans-serif;  
+     background: #111;
+    }
+    *{
+      box-sizing: border-box;
+    }
+.weather-app{
+  min-height: 100vh;
+  background-image: url("img/clearsky.avif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  transform: 500 ms;
+  opacity: 1;
+}
+.weather-app::before{
+  content: "" ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+height: 100%;
+background: rgba(0,0,0,,.3);
+z-index: 0;
+}
 
 .city{
  font-size: 80px;
@@ -72,7 +101,7 @@ li{
     .topnav input[type=text] {
     border: 1px solid #ccc;
     }
-    }
+  }
     .cleerfix-temperature strong {
         color: rgb(33, 33, 33);
         font-size: 64px;
@@ -94,9 +123,5 @@ li{
       .cleerfix-temperature .active:hover {
         text-decoration: none;
       }
-    .card{
-        background-image: url("img/clear.gif ");
-        background-repeat:no-repeat;
-        background-position:top center;
-        background-size:1200px 600px;
-    }
+  
+       
