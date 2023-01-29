@@ -1,32 +1,25 @@
 body{
- margin: 0;
-     font-family:'Rubi',sans-serif;  
-     background: #111;
-    }
-    *{
-      box-sizing: border-box;
-    }
+  background: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  font-family: arial, sans-serif;
+}
+.weather-app-wrapper {
+  max-width: 700px 850px;
+  margin: 30px auto;
+}
 .weather-app{
   min-height: 100vh;
-  background-image: url("img/clearsky.avif");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+background-image: url("img/anime-girl-playing-piano-9e-1920x1080.jpg");
+background-size: cover;
+box-sizing: border-box;
+background-repeat: no-repeat;
   color: #fff;
   position: relative;
   transform: 500 ms;
   opacity: 1;
+  border: 1px solid #dadde1;
+  border-radius: 8px;
 }
-.weather-app::before{
-  content: "" ;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-height: 100%;
-background: rgba(0,0,0,,.3);
-z-index: 0;
-}
+
 
 .city{
  font-size: 80px;
@@ -49,13 +42,15 @@ z-index: 0;
 }
 li{
     text-transform: capitalize;
+    list-style: none;
+    color: black;
 }
 .topnav {
     overflow: hidden;
     background-color:#00204a;
+    border-radius:5px ;
     }
     .topnav a {
-    float: left; display: block;
     color: white; text-align: center;
     padding: 14px 16px; text-decoration: none;
     font-size: 17px;
@@ -107,6 +102,7 @@ li{
         font-size: 64px;
         line-height: 1;
         font-weight: 400;
+        text-align: center;
       }
       
       .cleerfix-temperature .units {
@@ -123,5 +119,21 @@ li{
       .cleerfix-temperature .active:hover {
         text-decoration: none;
       }
+  .weather-forecast{
+    background-color: rgba(42, 76, 121, 0.3)/* Green background with 30% opacity */
+  };
+
+    margin: 0;
+    padding: 30px;
+    top: -34px;
+    opacity: 1;
+  }
+
   
-       
+.cleerfix-temperature  img{
+  margin-right: 5px;
+  height: 100px;
+  width: 100px;
+opacity: 1;
+text-align: center;
+}

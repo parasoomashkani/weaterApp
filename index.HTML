@@ -17,8 +17,9 @@
     <title>Weather App</title>
 </head>
 <body>
-<div class="weather-app"></div>
-    
+  <div class="container">
+    <div class="weather-app-wrapper">
+<div class="weather-app" id ="weather-bg">
                 <div class="topnav" >
                         <a class="active" href="file:///D:/SheCode/weaterApp/index.HTML">Home</a>
                         <a href="https://www.shecodes.io/">About</a>
@@ -27,7 +28,7 @@
                         <input class="form-control me-2" type="search" placeholder=" search city.." aria-label="Search" 
                         id="city-input"/>
                         <input type="submit" value="search" class="btn btn-outline-secondary w-2 sm "/>
-
+                       
                                 </form>
                         </div>
                         </div>
@@ -46,8 +47,8 @@
         id="icon"
         alt="cleer" />
         <div class="float-left">
-          <strong id="temperature"></strong
-          ><span class="units"
+          <strong id="temperature" ></strong>
+          <span class="units"
             ><a href="#" id="celsius-link" class="active">°C</a> |
             <a href="#" id="fahrenheit-link">°F</a></span
           >
@@ -63,15 +64,18 @@
       </div>
 </div>
 <br />
-<hr/>
+<br /><br /><br /><br /><br /><br />
 <div class="weather-forecast" id="forecast">      
 </div>
-<br />
-<hr/>
-           
+
+
+  </div>         
 <small>
    <a href="https://github.com/parasoomashkani/weaterApp"  target="_blank">open source code</a> by Parastoo Mashkani
 </small>
+
+    </div>
+</div>
 </body>
 <script src="index.js"></script>
 </html>
